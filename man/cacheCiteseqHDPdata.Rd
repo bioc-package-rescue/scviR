@@ -12,7 +12,7 @@ retrieve and cache a 349-protein CITE-seq dataset as employed in
 scvi-tools tutorial
 }
 \examples{
-\dontrun{
-cacheCiteseqHDPdata()
+if (interactive()) {
+  cacheCiteseqHDPdata()
 }
 }

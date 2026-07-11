@@ -16,7 +16,7 @@ character vector of lines from python help result
 helper to get text from python help utility -- may need handling through basilisk
 }
 \examples{
-\dontrun{
-pyHelp2(reticulate::import("scvi"))
+if (interactive() || reticulate::py_available()) {
+  try(pyHelp2(reticulate::import("os")))
 }
 }
