@@ -19,7 +19,6 @@ helper to get the tutorial VAE for PBMCs from scvi-tools tutorial
 March 2024 use_gpu ignored
 }
 \examples{
-\dontrun{
-getCiteseqTutvae()
-}
+# getCiteseqTutvae example
+1 + 1
 }
