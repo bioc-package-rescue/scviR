@@ -2,6 +2,10 @@
 #' @import reticulate
 #' @param object a reference to a python module typically with class 'python.builtin.module'
 #' @return character vector of lines from python help result
+#' @examples
+#' \dontrun{
+#' pyHelp2(reticulate::import("scvi"))
+#' }
 #' @export
 pyHelp2 <- function(object) {
   help <- reticulate::py_capture_output(reticulate::import_builtins()$help(object))
@@ -22,6 +26,10 @@ pyHelp2 <- function(object) {
 #' shiny app that helps access documentation on python-accessible components
 #' @import shiny
 #' @return shinyApp instance
+#' @examples
+#' \dontrun{
+#' scviHelper()
+#' }
 #' @export
 scviHelper = function() {
 # build 2-level hierarchy in advance; it cannot be done in the reactive
@@ -103,6 +111,10 @@ shinyApp(ui=ui, server=server)
 #' shiny app that helps access documentation on python-accessible components
 #' @import shiny
 #' @return shinyApp instance
+#' @examples
+#' \dontrun{
+#' scanpyHelper()
+#' }
 #' @export
 scanpyHelper = function() {
 # build 2-level hierarchy in advance; it cannot be done in the reactive

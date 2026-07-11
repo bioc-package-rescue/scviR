@@ -15,8 +15,8 @@ character vector of lines from python help result
 \description{
 helper to get text from python help utility -- may need handling through basilisk
 }
-
 \examples{
-# pyHelp2 example
-1 + 1
+\dontrun{
+pyHelp2(reticulate::import("scvi"))
+}
 }

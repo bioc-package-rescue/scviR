@@ -12,8 +12,8 @@ shinyApp instance
 \description{
 shiny app that helps access documentation on python-accessible components
 }
-
 \examples{
-# scanpyHelper example
-1 + 1
+\dontrun{
+scanpyHelper()
+}
 }
