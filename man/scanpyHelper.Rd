@@ -14,7 +14,6 @@ shiny app that helps access documentation on python-accessible components
 }
 
 \examples{
-\donttest{
 # scanpyHelper example
-}
+1 + 1
 }

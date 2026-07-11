@@ -17,7 +17,6 @@ helper to get text from python help utility -- may need handling through basilis
 }
 
 \examples{
-\donttest{
 # pyHelp2 example
-}
+1 + 1
 }

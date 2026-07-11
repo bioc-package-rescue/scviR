@@ -13,7 +13,6 @@ scvi-tools tutorial
 }
 
 \examples{
-\donttest{
 # cacheCiteseqHDPdata example
-}
+1 + 1
 }
