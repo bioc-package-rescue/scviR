@@ -3,8 +3,11 @@
 #' @param object a reference to a python module typically with class 'python.builtin.module'
 #' @return character vector of lines from python help result
 #' @examples
-#' \dontrun{
-#' pyHelp2(reticulate::import("scvi"))
+#' if (interactive() || reticulate::py_available()) {
+#'   try({
+#'     res <- pyHelp2(reticulate::import("os"))
+#'     head(res)
+#'   }, silent = TRUE)
 #' }
 #' @export
 pyHelp2 <- function(object) {
@@ -27,8 +30,8 @@ pyHelp2 <- function(object) {
 #' @import shiny
 #' @return shinyApp instance
 #' @examples
-#' \dontrun{
-#' scviHelper()
+#' if (interactive()) {
+#'   scviHelper()
 #' }
 #' @export
 scviHelper = function() {
@@ -112,8 +115,8 @@ shinyApp(ui=ui, server=server)
 #' @import shiny
 #' @return shinyApp instance
 #' @examples
-#' \dontrun{
-#' scanpyHelper()
+#' if (interactive()) {
+#'   scanpyHelper()
 #' }
 #' @export
 scanpyHelper = function() {

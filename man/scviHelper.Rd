@@ -13,7 +13,7 @@ shinyApp instance
 shiny app that helps access documentation on python-accessible components
 }
 \examples{
-\dontrun{
-scviHelper()
+if (interactive()) {
+  scviHelper()
 }
 }
