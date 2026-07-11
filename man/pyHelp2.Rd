@@ -17,6 +17,9 @@ helper to get text from python help utility -- may need handling through basilis
 }
 \examples{
 if (interactive() || reticulate::py_available()) {
-  try(pyHelp2(reticulate::import("os")))
+  try({
+    res <- pyHelp2(reticulate::import("os"))
+    head(res)
+  }, silent = TRUE)
 }
 }

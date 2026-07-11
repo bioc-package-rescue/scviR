@@ -4,7 +4,10 @@
 #' @return character vector of lines from python help result
 #' @examples
 #' if (interactive() || reticulate::py_available()) {
-#'   try(pyHelp2(reticulate::import("os")))
+#'   try({
+#'     res <- pyHelp2(reticulate::import("os"))
+#'     head(res)
+#'   }, silent = TRUE)
 #' }
 #' @export
 pyHelp2 <- function(object) {
