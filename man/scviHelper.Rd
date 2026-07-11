@@ -12,3 +12,9 @@ shinyApp instance
 \description{
 shiny app that helps access documentation on python-accessible components
 }
+
+\examples{
+\donttest{
+# scviHelper example
+}
+}

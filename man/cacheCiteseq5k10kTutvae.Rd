@@ -22,7 +22,7 @@ It may be advantageous to set `options(timeout=3600)` or to allow an even greate
 time for internet downloads, if working at a relatively slow network connection.
 }
 \examples{
-\dontrun{
+\donttest{
 zpath <- cacheCiteseq5k10kTutvae()
 td <- tempdir()
 utils::unzip(zpath, exdir = td)

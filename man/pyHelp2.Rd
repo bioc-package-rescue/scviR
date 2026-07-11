@@ -15,3 +15,9 @@ character vector of lines from python help result
 \description{
 helper to get text from python help utility -- may need handling through basilisk
 }
+
+\examples{
+\donttest{
+# pyHelp2 example
+}
+}
